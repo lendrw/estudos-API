@@ -1,5 +1,7 @@
 package com.api.parkingcontrol.services;
 
+import java.util.List;
+
 import javax.transaction.Transactional;
 
 import com.api.parkingcontrol.models.ParkingSpotModel;
@@ -35,5 +37,10 @@ public class ParkingSpotService {
 
     public boolean existsByApartmentAndBlock(String apartment, String block) {
         return parkingSpotRepository.existsByApartmentAndBlock(apartment, block);
+    }
+
+
+    public List<ParkingSpotModel> findAll() {
+        return parkingSpotRepository.findAll();
     }
 }
