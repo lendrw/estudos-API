@@ -36,7 +36,7 @@ public class ParkingSpotModel implements Serializable{
     @Column(nullable = false, length = 30)
     private String apartment;
     @Column(nullable = false, length = 30)
-    private String rblock;
+    private String block;
 
 
     public UUID getId() {
@@ -111,12 +111,12 @@ public class ParkingSpotModel implements Serializable{
         this.apartment = apartment;
     }
 
-    public String getRblock() {
-        return this.rblock;
+    public String getBlock() {
+        return this.block;
     }
 
-    public void setRblock(String rblock) {
-        this.rblock = rblock;
+    public void setBlock(String block) {
+        this.block = block;
     }
 
 }
